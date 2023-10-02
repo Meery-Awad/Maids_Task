@@ -65,7 +65,7 @@ const UserDetails = () => {
                         <img src={userDetails.avatar} className="userAvatar"></img>
 
                         <span className="Details" >
-                            <h4>{userDetails.first_name} {userDetails.last_name}</h4>
+                            <h4 className="info">{userDetails.first_name} {userDetails.last_name}</h4>
 
                             <p className="info"><i class='fas fa-user-alt'></i> user id: {userDetails.id}</p>
 

@@ -65,6 +65,7 @@
     @include cardUserInfo;
     margin-left: 6vw;
     margin-top: 50px;
+    width: 15vw;
 
 
 }
@@ -72,7 +73,7 @@
 .userInfo img,
 .userInfo .userAvatar {
     height: 40vh;
-    width: 15vw;
+    width: 100%;
 }
 
 .userInfo h5 {
@@ -133,4 +134,13 @@
 
 .skeleton-text-top10:last-child {
     width: 50%;
+}
+@media screen and (max-width: 990px){
+    .userInfo {
+
+        width: 150px
+        
+    
+    
+    }
 }

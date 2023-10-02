@@ -1,10 +1,8 @@
 .loading1 {
   position: relative;
   margin: auto;
-  display: inline-block;
   width: 50px;
   height: 50px;
-  margin-left: 25vw;
   --colorA: #b78eff;
 }
 .loading1::before, .loading1::after {
@@ -54,13 +52,14 @@
   height: 35vh;
 }
 
-.UserDetails .Details h4 {
-  font-weight: bold;
-}
-
 .UserDetails .Details .info {
   margin: 3vh 1vw;
   font-size: 17px;
+}
+
+.UserDetails .Details h4 {
+  font-weight: bold;
+  font-size: 21px;
 }
 
 .UserDetails .Details .email,
@@ -98,5 +97,8 @@
 @media screen and (max-width: 990px) {
   .UserDetails {
     flex-direction: column;
+  }
+  .UserDetails .Details {
+    margin-left: -1vw;
   }
 }/*# sourceMappingURL=userDetails.css.map */
