@@ -52,7 +52,7 @@ const Footer = () => {
                 <div class="final_text"></div>
                 <p>Copyright &copy; All rights reserved
                     <br />
-                    Designed by Meery Awad, 2022
+                    Designed by Meery Awad, 2023
                 </p>
             </footer>
 
