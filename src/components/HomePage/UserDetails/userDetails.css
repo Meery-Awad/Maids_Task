@@ -1,0 +1,102 @@
+.loading1 {
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 25vw;
+  --colorA: #b78eff;
+}
+.loading1::before, .loading1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border-top: 10px solid #fff;
+  filter: drop-shadow(0 0 2px var(--colorA)) drop-shadow(0 0 5px var(--colorA)) drop-shadow(0 0 10px var(--colorA)) drop-shadow(0 0 20px var(--colorA));
+  animation: rotate 3s infinite linear;
+}
+.loading1::after {
+  --colorA: #ffec41;
+  animation-delay: -1.5s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.UserDetails {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.UserDetails .Details {
+  margin-left: 20px;
+  margin-top: 14px;
+  box-shadow: 2px 2px 9px 8px #888;
+}
+
+.UserDetails img,
+.UserDetails .userAvatar {
+  border-left: 2px solid #664AFF;
+  border-top: 2px solid #664AFF;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: -1px -1px 2px #888;
+  background-color: rgb(240, 240, 240);
+  height: 35vh;
+}
+
+.UserDetails .Details h4 {
+  font-weight: bold;
+}
+
+.UserDetails .Details .info {
+  margin: 3vh 1vw;
+  font-size: 17px;
+}
+
+.UserDetails .Details .email,
+.UserDetails .Details p {
+  color: #888;
+}
+
+.UserDetails .Details a {
+  background-color: rgb(218, 195, 92);
+  color: white;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #888;
+  padding: 10px;
+  padding: 10px 10vw;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.UserDetails .Details a:hover {
+  color: rgb(218, 195, 92);
+  background-color: white;
+  border: 1px solid rgb(218, 195, 92);
+  box-shadow: 0px 2px 10px 5px rgb(218, 195, 92);
+}
+
+.UserDetails .Details .text {
+  background-color: rgb(168, 168, 168);
+  color: #fff;
+  padding: 3px 5px;
+}
+
+@media screen and (max-width: 990px) {
+  .UserDetails {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=userDetails.css.map */
